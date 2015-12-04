@@ -1,0 +1,14 @@
+---
+galaxy_info:
+  author: mjanser
+  description: Installs and configures ssmtp on Fedora
+  license: MIT
+  min_ansible_version: 1.6
+  platforms:
+  - name: Fedora
+    versions:
+    - 23
+  categories:
+  - system
+  - mail
+dependencies: []

@@ -1,0 +1,6 @@
+---
+ssmtp_recipient: postmaster
+ssmtp_mailhub: mail
+ssmtp_use_tls: yes
+ssmtp_auth_username: ~
+ssmtp_auth_password: ~
