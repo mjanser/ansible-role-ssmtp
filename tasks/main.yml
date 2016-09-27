@@ -1,10 +1,12 @@
 ---
 - name: ensure ssmtp software is installed
-  dnf: name=ssmtp
-  sudo: yes
+  package:
+    name: ssmtp
 
 - name: ensure ssmtp is configured
-  template: src=ssmtp.conf.j2
-            dest=/etc/ssmtp/ssmtp.conf
-            owner=root group=mail mode=0640
-  sudo: yes
+  template:
+    src: ssmtp.conf.j2
+    dest: /etc/ssmtp/ssmtp.conf
+    owner: root
+    group: mail
+    mode: 0640
