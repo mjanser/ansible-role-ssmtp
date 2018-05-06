@@ -1,5 +1,6 @@
 ---
 ssmtp_recipient: postmaster
+ssmtp_allow_from_override: no
 ssmtp_mailhub: mail
 ssmtp_use_tls: yes
 ssmtp_auth_username: ~

@@ -30,7 +30,7 @@ mailhub={{ ssmtp_mailhub }}
 
 # Set this to never rewrite the "From:" line (unless not given) and to
 # use that address in the "from line" of the envelope.
-#FromLineOverride=YES
+FromLineOverride={% if ssmtp_allow_from_override %}YES{% else %}NO{% endif %}
 
 # Use SSL/TLS to send secure messages to server.
 UseTLS={% if ssmtp_use_tls %}YES{% else %}NO{% endif %}
